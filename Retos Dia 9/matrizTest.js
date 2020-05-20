@@ -1,0 +1,13 @@
+"use strict";
+exports.__esModule = true;
+var matrix_1 = require("./matrix");
+var m1 = new matrix_1.Matrix(2, 10, 10);
+var m2 = new matrix_1.Matrix(2, 10, 10);
+var m3 = m1.add(m2);
+var m4 = m1.multNumber(2);
+var m5 = m1.mutSpecial(3);
+m1.printMatriz();
+m2.printMatriz();
+m3.printMatriz();
+m4.printMatriz();
+m5.printMatriz();

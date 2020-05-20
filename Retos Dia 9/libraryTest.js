@@ -1,0 +1,12 @@
+"use strict";
+exports.__esModule = true;
+var Library_1 = require("./Library");
+var Book_1 = require("./Book");
+var libro1 = new Book_1.Book("Introduccion a Javascript", 233, "2344433-BC23333", "Joseph Smith", "Now Editions");
+var libro2 = new Book_1.Book("Introduccion a Java", 233, "2344433-BC23333", "Mario Benito", "Now Editions");
+var libro3 = new Book_1.Book("Introduccion a Type", 233, "2344433-BC23333", "Juan beltran", "Now Editions");
+var array = [libro2, libro3, libro1];
+var l1 = new Library_1.Library(array, "Leganes.Madrid", "Marco Londra");
+console.log(l1.toString());
+console.log(l1.getNumberOfBooks());
+console.log(l1.findByAuthor("Mario Benito"));
